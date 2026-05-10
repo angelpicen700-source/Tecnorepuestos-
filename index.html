@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>TecnoRepuestos</title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+
+  <body>
+    <!-- index.html -->
+
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<img src="https://i.ibb.co/bffh1KX/Blue-White-Modern-Computer-Repair-Logo-removebg-preview.png" class="logo">
+  <title>Tecno Repuestos</title>
+
+  <style>
+
+    *{
+
+      margin:0;
+
+      padding:0;
+
+      box-sizing:border-box;
+
+      font-family:Arial, Helvetica, sans-serif;
+
+    }
+
+    body{
+
+      background:#0d0d0d;
+
+      color:white;
+
+    }
+
+    header{
+
+      background:linear-gradient(90deg,#001f3f,#000);
+
+      padding:20px;
+
+      text-align:center;
+
+      border-bottom:3px solid #00aaff;
+
+    }
+
+    header h1{
+
+      font-size:50px;
+
+      color:#00aaff;
+
+      text-shadow:0 0 10px #00aaff;
+
+    }
+
+    header p{
+
+      margin-top:10px;
+
+      font-size:20px;
+
+      color:#ddd;
+
+    }
+
+    nav{
+
+      background:#111;
+
+      padding:15px;
+
+      text-align:center;
+
+    }
+
+    nav a{
+
+      color:white;
+
+      text-decoration:none;
+
+      margin:15px;
+
+      font-weight:bold;
+
+      transition:0.3s;
+
+    }
+
+    nav a:hover{
+
+      color:#00aaff;
+
+    }
+
+    .hero{
+
+      height:400px;
+
+      background:url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1200&auto=format&fit=crop') center/cover;
+
+      display:flex;
+
+      justify-content:center;
+
+      align-items:center;
+
+      text-align:center;
+
+    }
+
+    .hero-text{
+
+      background:rgba(0,0,0,0.7);
+
+      padding:30px;
+
+      border-radius:15px;
+
+    }
+
+    .hero-text h2{
+
+      font-size:45px;
+
+      margin-bottom:10px;
+
+      color:#00aaff;
+
+    }
+
+    .hero-text p{
+
+      font-size:20px;
+
+    }
+
+    section{
+
+      padding:60px 20px;
+
+    }
+
+    .titulo{
+
+      text-align:center;
+
+      font-size:40px;
+
+      margin-bottom:40px;
+
+      color:#00aaff;
+
+    }
+
+    .cards{
+
+      display:flex;
+
+      flex-wrap:wrap;
+
+      justify-content:center;
+
+      gap:20px;
+
+    }
+
+    .card{
+
+      background:#1a1a1a;
+
+      width:300px;
+
+      padding:25px;
+
+      border-radius:15px;
+
+      border:2px solid #00aaff;
+
+      transition:0.3s;
+
+    }
+
+    .card:hover{
+
+      transform:translateY(-10px);
+
+      box-shadow:0 0 20px #00aaff;
+
+    }
+
+    .card h3{
+
+      margin-bottom:15px;
+
+      color:#00aaff;
+
+    }
+
+    .catalogo{
+
+      display:grid;
+
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+      gap:20px;
+
+    }
+
+    .producto{
+
+      background:#1a1a1a;
+
+      padding:20px;
+
+      border-radius:15px;
+
+      text-align:center;
+
+      border:2px solid #222;
+
+      transition:0.3s;
+
+    }
+
+    .producto:hover{
+
+      border-color:#00aaff;
+
+      transform:scale(1.03);
+
+    }
+
+    .producto h4{
+
+      margin-bottom:10px;
+
+      color:#00aaff;
+
+    }
+
+    .precio{
+
+      color:#00ff88;
+
+      font-size:22px;
+
+      font-weight:bold;
+
+    }
+
+    .contacto{
+
+      text-align:center;
+
+      background:#111;
+
+      border-top:3px solid #00aaff;
+
+    }
+
+    .contacto p{
+
+      margin:10px;
+
+      font-size:18px;
+
+    }
+
+    footer{
+
+      text-align:center;
+
+      padding:20px;
+
+      background:black;
+
+      color:#777;
+
+    }
+
+    .boton{
+
+      display:inline-block;
+
+      margin-top:20px;
+
+      padding:15px 25px;
+
+      background:#00aaff;
+
+      color:white;
+
+      text-decoration:none;
+
+      border-radius:10px;
+
+      transition:0.3s;
+
+      font-weight:bold;
+
+    }
+
+    .boton:hover{
+
+      background:#0088cc;
+
+      transform:scale(1.05);
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <header>
+
+    <h1>TECNO REPUESTOS</h1>
+
+    <p>Potencia tu motor y tu tecnología</p>
+
+  </header>
+
+  <nav>
+
+    <a href="#inicio">Inicio</a>
+
+    <a href="#servicios">Servicios</a>
+
+    <a href="#catalogo">Catálogo</a>
+
+    <a href="#contacto">Contacto</a>
+
+  </nav>
+
+  <section class="hero" id="inicio">
+
+    <div class="hero-text">
+
+      <h2>Bienvenido a Tecno Repuestos</h2>
+
+      <p>
+
+        Repuestos automotrices, accesorios para celulares y servicio técnico especializado.
+
+      </p>
+
+      <a href="#catalogo" class="boton">
+
+        Ver catálogo
+
+      </a>
+
+    </div>
+
+  </section>
+
+  <section id="servicios">
+
+    <h2 class="titulo">Nuestros Servicios</h2>
+
+    <div class="cards">
+
+      <div class="card">
+
+        <h3>🚗 Repuestos Automotrices</h3>
+
+        <p>
+
+          Venta de aceites, luces LED, baterías, herramientas y repuestos para vehículos.
+
+        </p>
+
+      </div>
+
+      <div class="card">
+
+        <h3>📱 Tecnología</h3>
+
+        <p>
+
+          Fundas, cargadores, vidrios templados, audífonos y accesorios para celulares.
+
+        </p>
+
+      </div>
+
+      <div class="card">
+
+        <h3>🔧 Servicio Técnico</h3>
+
+        <p>
+
+          Reparación de celulares y mantenimiento básico automotriz.
+
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="catalogo">
+
+    <h2 class="titulo">Catálogo</h2>
+
+    <div class="catalogo">
+
+      <div class="producto">
+
+        <h4>Aceite 20W50</h4>
+
+        <p class="precio">Q75</p>
+
+      </div>
+
+      <div class="producto">
+
+        <h4>Luces LED</h4>
+
+        <p class="precio">Q40</p>
+
+      </div>
+
+      <div class="producto">
+
+        <h4>Batería Pequeña</h4>
+
+        <p class="precio">Q350</p>
+
+      </div>
+
+      <div class="producto">
+
+        <h4>Funda para Celular</h4>
+
+        <p class="precio">Q25</p>
+
+      </div>
+
+      <div class="producto">
+
+        <h4>Cargador Rápido</h4>
+
+        <p class="precio">Q50</p>
+
+      </div>
+
+      <div class="producto">
+
+        <h4>Vidrio Templado</h4>
+
+        <p class="precio">Q20</p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="contacto" id="contacto">
+
+    <h2 class="titulo">Contacto</h2>
+
+    <p> dirección: 2da. calle final, primer callejón Barrio el Zapotillo zona 5 Chiquimula</p>
+
+    <p>contacto: +502 4567 1872</p>
+
+    <p> Facebook: Tecno Repuestos</p>
+
+    <a class="boton" href="#">
+
+      Contactar
+
+    </a>
+
+  </section>
+
+  <footer>
+
+    <p>
+
+      © 2026 Tecno Repuestos | Potencia tu motor y tu tecnología
+
+    </p>
+
+  </footer>
+
+</body>
+
+</html>
+    <script src="/script.js"></script>
+  </body>
+
+</html>
